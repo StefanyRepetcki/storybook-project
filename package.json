@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "start": "npm run storybook",
-    "predeploy": "npm run build",
-    "deploy": "gh -pages -d build ",
+    "predeploy": "npm run storybook",
+    "deploy": "gh -pages -d storybook ",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006 -c config/storybook",
     "build-storybook": "build-storybook"
