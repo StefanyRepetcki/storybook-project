@@ -1,9 +1,9 @@
 // @ts-ignore
-import exampleOne from '../../assets/scss/images/exampleOne.png';
+import exampleOne from '../../assets/images/exampleOne.png';
 //@ts-ignore
-import examploTwo from '../../assets/scss/images/exampleTwo.png';
+import examploTwo from '../../assets/images/exampleTwo.png';
 //@ts-ignore
-import examploThree from '../../assets/scss/images/exampleThree.png';
+import examploThree from '../../assets/images/exampleThree.png';
 
 const imgOne = {
   src: exampleOne,

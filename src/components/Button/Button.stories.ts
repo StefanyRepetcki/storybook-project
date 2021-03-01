@@ -1,8 +1,9 @@
 export default {
   title: 'DOCUMENTAÇÃO/Button',
+  argTypes: { onClick: { action: 'clicked' } },
 };
 
-export const Button = () => ({
+export const Button = (args: any, { argTypes }: any) => ({
   template: `
 <div class="container">
   <button type="button" class="btn btn-primary">Primary</button>
