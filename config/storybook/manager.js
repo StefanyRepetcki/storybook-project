@@ -1,8 +1,8 @@
 import { addons } from '@storybook/addons';
-import theme from './theme';
+import defaultTheme from './defaultTheme';
 
 addons.setConfig({
-    theme: theme,
+    theme: defaultTheme,
     sidebarAnimations: true,
     isFullscreen: false,
     showNav: true,

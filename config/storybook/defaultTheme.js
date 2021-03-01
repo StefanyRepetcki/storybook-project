@@ -1,16 +1,16 @@
+import imgLogo from '../../src/assets/images/Logo.jpg';
 import { create } from '@storybook/theming';
-import imgLogo from '../../src/assets/images/Logo.png';
 
 export default create({
   base: 'light',
 
-  colorPrimary: '#331B13',
-  colorSecondary: '#F8D7C4',
+  colorPrimary: '#ff00cc',
+  colorSecondary: '#333399',
 
   // UI
-  appBg: 'black',
+  appBg: 'white',
   appContentBg: 'white',
-  appBorderColor: '#F8D7C4',
+  appBorderColor: '#333399',
   appBorderRadius: 4,
 
   // Typography
@@ -22,17 +22,17 @@ export default create({
   textInverseColor: 'rgba(255,255,255,0.9)',
 
   // Toolbar default and active colors
-  barTextColor: '#F8D7C4',
-  barSelectedColor: 'black',
-  barBg: '#331B13',
+  barTextColor: '#333399',
+  barSelectedColor: 'white',
+  barBg: '#ff00cc',
 
   // Form colors
   inputBg: 'white',
-  inputBorder: '#F8D7C4',
+  inputBorder: '#333399',
   inputTextColor: 'black',
   inputBorderRadius: 4,
 
   brandTitle: 'Desenvolvimento de software',
   brandUrl: '#',
-  brandImage: imgLogo,
+  brandImage: `/${imgLogo}`,
 });
