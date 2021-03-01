@@ -1,0 +1,54 @@
+// variables
+$pink: #ff00cc;
+$white: #ffffff;
+$blue: #333399;
+$background-pink: $pink;
+$background-gradient: -webkit-linear-gradient(to right, #333399, #ff00cc) !important;/* Chrome 10-25, Safari 5.1-6 */
+$background-gradient-otherbrowser: linear-gradient(to right, #333399, #ff00cc) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+
+.token.string {
+    color: $white !important;
+}
+
+.sbdocs{
+    max-width: 100% !important;
+    padding: 2% !important;
+    justify-content: left;
+}
+
+.accordion-button, .accordion { 
+    color: $white;
+    background: $pink;  
+    background: $background-gradient;
+    background: $background-gradient-otherbrowser;
+    code, button{
+        color: white !important;
+    }
+    &:after{
+       filter: invert(1);
+    }
+    &:focus{
+      border-color: transparent !important;
+      box-shadow: none !important;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    position: absolute;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $pink;
+    height: 80px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $blue;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: lighten($blue, 5%);
+    transition: .5s;
+}
