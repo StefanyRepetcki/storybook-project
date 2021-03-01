@@ -27,7 +27,7 @@ export default {
            'navbar navbar-dark bg-danger',
            'navbar navbar-dark bg-warning',
            'navbar navbar-dark bg-info',
-           'navbar bg-light text-dark',
+           'navbar bg-light text-dark border',
            'navbar navbar-dark bg-dark',
            'navbar bg-white text-dark',
          ],
@@ -41,18 +41,19 @@ export const NavBar = (args: any, { argTypes }: any) => ({
   template: `
 <nav :class="colornavbar">
   <div class="container-fluid">
-    <a class="navbar-brand">Navbar</a>
+    <a class="navbar-brand"><img :src="logo" alt="logo" height="30" height="60"></a>
     <form class="d-flex">
       <input class="form-control me-2" type="search" :placeholder="label" aria-label="Search">
-      <button :class="colorbutton" type="submit">Search</button>
+      <input type="button" :class="colorbutton" :value="botao">
     </form>
   </div>
 </nav>`,
 });
 
-// @ts-ignore
 NavBar.args = {
-   label: 'Button',
-   colorbutton: 'btn btn-danger',
-   colornavbar: 'navbar navbar-dark bg-primary',
+   label: 'Pesquise aqui',
+   botao: 'Pesquisar',
+   colorbutton: 'btn btn-info',
+   colornavbar: 'navbar bg-light text-dark border',
+   logo: 'https://cdn.pixabay.com/photo/2017/07/10/19/42/logo-2491236_960_720.png',
  }; 
