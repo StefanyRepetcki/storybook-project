@@ -16,6 +16,120 @@ $background-gradient-otherbrowser: linear-gradient(to right, #333399, #ff00cc) !
     justify-content: left;
 }
 
+.btn-custom-gradient {
+    background: linear-gradient(to bottom, #888dff, #84d6f9) !important;
+    border-radius: 5px !important;
+    display: inline-block;
+    color: white !important;
+    text-transform: uppercase !important;
+    border-bottom: 5px solid $blue !important;
+    font-size: 1.5rem;
+    margin: 2% 0 !important;
+    font-family: "Quicksand",sans-serif; 
+    &:hover, &:active {
+        //background: #ff4a70 !important;
+        border-bottom: none !important;
+        transition: none !important;
+    }
+}
+
+.btn-custom {
+    background-color: #FF305C !important;
+    border-radius: 5px !important;
+    display: inline-block;
+    color: white !important;
+    text-transform: uppercase !important;
+    border-bottom: 5px solid #b00025 !important;
+    font-size: 1.5rem;
+    margin: 2% 0 !important;
+    font-family: "Quicksand",sans-serif; 
+    &:hover, &:active {
+        //background: #ff4a70 !important;
+        border-bottom: none !important;
+        transition: none !important;
+    }
+}
+
+.btn-custom-pink {
+    background-color: $pink !important;
+    border-radius: 5px !important;
+    display: inline-block;
+    color: white !important;
+    text-transform: uppercase !important;
+    border-bottom: 5px solid $blue !important;
+    font-size: 1.5rem;
+    margin: 2% 0 !important;
+    font-family: "Quicksand",sans-serif; 
+    &:hover, &:active {
+        //background: #ff4a70 !important;
+        border-bottom: none !important;
+        transition: none !important;
+    }
+}
+
+.btn-custom:hover:active {
+    border-bottom: none !important;
+    transition: none !important;
+}
+
+.btn-custom:hover {
+    background: #ff4a70 !important;
+    color: white !important;
+}
+
+// cards
+.row-card {
+    height: 500px !important;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.card-custom {
+    overflow: hidden;
+    width: 440px !important;
+    height: 440px !important;
+    position: absolute;
+    float: left;
+    padding: 0%;
+    img {
+        width: 440px !important;
+        height: 440px !important;
+        object-fit: cover;
+        //zoomer        
+        animation-name: zoomer;
+        animation-duration: 100s;
+        animation-iteration-count: infinite;
+    }
+    .card-body {
+        width: 460px !important;
+        height: 170px !important;
+        left: -12px;
+        bottom: 170px;
+        position: relative;
+        background-color: rgba(0,0,0,0.71);
+        color: white;
+        padding: 7% !important;
+        div {
+            button {
+                width: 100%;
+                background-color: #EAB82F;
+                display: block;
+                color: black;
+                text-align: center;
+                border-radius: 2px;
+                height: 33px;
+                padding: 0 !important;
+                float: left;
+                margin-right: 7px;
+            }
+        }
+    }
+}
+
+// accordions
+
 .accordion-button, .accordion { 
     color: $white;
     background: $pink;  
@@ -32,6 +146,27 @@ $background-gradient-otherbrowser: linear-gradient(to right, #333399, #ff00cc) !
       box-shadow: none !important;
     }
 }
+
+// zoomer
+
+@keyframes zoomer {
+    50% {
+        -ms-transform: scale(1.5);
+        /* IE 9 */
+        -webkit-transform: scale(1.5);
+        /* Safari 3-8 */
+        transform: scale(1.5);
+    }
+    100% {
+        -ms-transform: scale(1);
+        /* IE 9 */
+        -webkit-transform: scale(1);
+        /* Safari 3-8 */
+        transform: scale(1);
+    }
+}
+
+// scrollbar
 
 ::-webkit-scrollbar {
     width: 12px;

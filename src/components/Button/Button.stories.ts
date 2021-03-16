@@ -1,10 +1,10 @@
 export default {
-  title: 'DOCUMENTAÇÃO/Button',
-  argTypes: { onClick: { action: 'clicked' } },
+	title: 'DOCUMENTAÇÃO/Button',
+	argTypes: { onClick: { action: 'clicked' } }
 };
 
 export const Button = (args: any, { argTypes }: any) => ({
-  template: `
+	template: `
 <div class="container">
   <button type="button" class="btn btn-primary">Primary</button>
   <button type="button" class="btn btn-secondary">Secondary</button>
@@ -15,5 +15,11 @@ export const Button = (args: any, { argTypes }: any) => ({
   <button type="button" class="btn btn-light">Light</button>
   <button type="button" class="btn btn-dark">Dark</button>
   <button type="button" class="btn btn-link">Link</button>
-</div>`,
+  <br/>
+  <div class="mt-5">
+    <button type="button" class="btn btn-custom">Primary</button>
+    <button type="button" class="btn btn-custom-pink">Primary</button>
+    <button type="button" class="btn btn-custom-gradient">Primary</button>
+  </div>
+</div>`
 });
