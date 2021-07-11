@@ -6,11 +6,14 @@ import BootstrapVue from 'bootstrap-vue';
 import Vue from 'vue';
 import bootstrap from 'bootstrap';
 
-Vue.use(BootstrapVue);
+new Vue({
+	BootstrapVue,
+	render: h => h(App)
+}).$mount('#app');
 
 configure(require.context('../../src/components', true, /\.stories\.js$/), module);
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },     
-  options: { storySort: { method: 'alphabetical'}, },
-}   
+	actions: { argTypesRegex: '^on[A-Z].*' },
+	options: { storySort: { method: 'alphabetical' } }
+};
