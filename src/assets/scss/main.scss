@@ -128,15 +128,75 @@ $background-gradient-otherbrowser: linear-gradient(to right, #333399, #ff00cc) !
     }
 }
 
-// accordions
+//  organization
+    .p-organizationchart .p-organizationchart-line-top {
+        border-top: 1px solid $pink;
+        border-color: $pink;
+    }
+    .p-organizationchart .p-organizationchart-line-left {
+        border-right: 1px solid $pink;
+        border-color: $pink;
+    }
 
+    .p-organizationchart .p-organizationchart-line-down {
+        background: $pink;
+    }
+
+    .p-person {
+        padding: 0;
+        border: 0 none;
+    }
+
+    .node-header, .node-content {
+        padding: .5em .7rem;
+    }
+
+    .node-header {
+        background-color: $blue;
+        color: #ffffff;
+    }
+
+    .node-content {
+        text-align: center;
+        border: 1px solid $blue;
+    }
+
+    .node-content img {
+        border-radius: 50%;
+    }
+
+    .department-cfo {
+        background-color: $blue;
+        color: #ffffff;
+    }
+
+    .department-coo {
+        background-color: $pink;
+        color: #ffffff;
+    }
+
+    .department-cto {
+        background-color: $pink;
+        color: #ffffff;
+        padding: 10px;
+    }
+
+// accordions
+.accordion-body {
+    color: black;
+}
+.accordion-header {
+    button {
+        color: white;
+    }
+}
 .accordion-button, .accordion { 
-    color: $white;
+    color: white;
     background: $pink;  
     background: $background-gradient;
     background: $background-gradient-otherbrowser;
     code, button{
-        color: white !important;
+        color: black !important;
     }
     &:after{
        filter: invert(1);
