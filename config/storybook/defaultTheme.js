@@ -1,38 +1,42 @@
-import imgLogo from '../../src/assets/images/Logo.jpg';
+import imgLogo from '../../src/assets/images/Logo.png';
 import { create } from '@storybook/theming';
 
+const background = 'rgb(224,100,212)';
+const backgroundlinear = 'linear-gradient(0deg, rgba(224,100,212,1) 0%, rgba(106,36,130,1) 100%)';
+const colorPrimary = '#792C8D';
+const colorSecondary = '#250D31';
+
 export default create({
-  base: 'light',
+	base: 'light',
 
-  colorPrimary: '#ff00cc',
-  colorSecondary: '#333399',
+	colorPrimary: colorPrimary,
+	colorSecondary: colorSecondary,
+	// UI
+	appBg: backgroundlinear,
+	appContentBg: colorSecondary,
+	appBorderColor: colorSecondary,
+	appBorderRadius: 4,
 
-  // UI
-  appBg: 'white',
-  appContentBg: 'white',
-  appBorderColor: '#333399',
-  appBorderRadius: 4,
+	// Typography
+	fontBase: '"Open Sans", sans-serif',
+	fontCode: 'monospace',
 
-  // Typography
-  fontBase: '"Open Sans", sans-serif',
-  fontCode: 'monospace',
+	// Text colors
+	textColor: 'white',
+	textInverseColor: 'rgba(255,255,255,0.9)',
 
-  // Text colors
-  textColor: 'black',
-  textInverseColor: 'rgba(255,255,255,0.9)',
+	// Toolbar default and active colors
+	barTextColor: colorSecondary,
+	barSelectedColor: 'white',
+	barBg: colorPrimary,
 
-  // Toolbar default and active colors
-  barTextColor: '#333399',
-  barSelectedColor: 'white',
-  barBg: '#ff00cc',
+	// Form colors
+	inputBg: 'white',
+	inputBorder: colorSecondary,
+	inputTextColor: 'black',
+	inputBorderRadius: 4,
 
-  // Form colors
-  inputBg: 'white',
-  inputBorder: '#333399',
-  inputTextColor: 'black',
-  inputBorderRadius: 4,
-
-  brandTitle: 'Desenvolvimento de software',
-  brandUrl: '#',
-  brandImage: `/${imgLogo}`,
+	brandTitle: 'Desenvolvimento de Software',
+	brandUrl: '#',
+	brandImage: `/${imgLogo}`
 });
